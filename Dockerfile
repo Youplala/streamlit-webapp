@@ -8,7 +8,7 @@ ENV API_KEY None
 
 COPY . .
 
-EXPOSE 4444
+EXPOSE 8080
 
 RUN sh setup.sh
 
