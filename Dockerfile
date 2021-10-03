@@ -11,5 +11,5 @@ COPY . .
 EXPOSE 8080
 
 RUN sh setup.sh
-
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit run --server.port $PORT app.py"]
+#CMD ["streamlit", "run", "app.py"]
