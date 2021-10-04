@@ -6,9 +6,11 @@ RUN pip install -r requirements.txt
 
 ENV API_KEY None
 
+ENV PORT 8080
+
 COPY . .
 
-EXPOSE 8080
+EXPOSE $PORT
 
 RUN sh setup.sh
 CMD ["streamlit run --server.port $PORT app.py"]
